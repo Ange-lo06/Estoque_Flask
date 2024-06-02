@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+  </head>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="modif.html">Novo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Editação</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Atualização</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Delete</a>
+      </li>
+  </ul>
+  <body>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">QTD</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Vinho Pergola</td>
+            <td>100</td>
+            <td>R$20,00</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Feijão</td>
+            <td>300</td>
+            <td>R$4,50</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Arroz</td>
+            <td>300</td>
+            <td>R$3,50</td>
+          </tr>
+        </tbody>
+      </table>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}">  </script>
+     </body>
+</html>
